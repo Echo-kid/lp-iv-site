@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <nav>
+      <a href="#" target="_blank">About</a> |
+      <a href="Collected-Images.html">Collected Images</a>
+    </nav>
+    <title>LPIV</title>
+    <style>
+    body {
+      background: linear-gradient( 35deg, #CCFFFF, #FFCCCC);
+    }
+    @font-face {
+    font-family: 'ProximaNova';
+     src: url('/fonts/proximanova_regular/ProximaNova-Reg-webfont.eot');
+     src: url('/fonts/proximanova_regular/ProximaNova-Reg-webfont.eot?iefix') format('eot'),
+          url('/fonts/proximanova_regular/ProximaNova-Reg-webfont.woff') format('woff'),
+          url('/fonts/proximanova_regular/ProximaNova-Reg-webfont.ttf') format('truetype'),
+     font-weight: normal;
+     font-style: normal;
+    } 
+    /* trying to figure this part out. I'd like ot use proxima nova instead of verdana. */
+    h1 {
+      font-family: 'Montserrat' , verdana;
+      color: hsl(180, 90%, 35%);
+      margin: 90px 20px 90px 20px;
+      padding: 20px 20px 20px 20px;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 45px;
+      font-weight: 400;
+    }
+    h2 {
+      color: gray;
+      font-family: 'Montserrat', verdana;
+      text-align: center;
+      margin: 10px 20px 20px 20px;
+      padding:20px 20px 20px 20px;
+      opacity: 0.7;
+      font-weight: 100;
+    }
+    p {
+      text-align: center;
+      font-family: 'Montserrat', monospace;
+      font-size: 17px;
+      font-weight: ;
+      line-height: 35px;
+    }
+    figcaption {
+      text-align: center;
+      font-family: 'Montserrat', monospace;
+      font-size: 17px;
+      font-weight: 10;
+      line-height: 35px;
+      color: gray;
+    }
+    nav {
+      text-align: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 20px;
+      margin: ;
+      padding: 7px 0px 7px 0px;
+      float: ;
+      color: hsl(180, 90%, 35%);
+      font-size: 17px;
+      background: linear-gradient( 35deg, #CCFFFF, #FFCCCC);
+      font-family:'Montserrat', monospace;
+
+    }
+    hr { display: block; 
+      height: 1px;
+      border: 0;
+      border-top: 1px solid hsl(180, 90%, 35%);
+      margin: 1em 0;
+      padding: 0;
+    }
+      #bouncing {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 100px;
+      }
+      .balls {
+        width: 50px;
+        height: 50px;
+        margin-top: 50px;
+        border-radius: 50%;
+        background: #00cccc;
+        position: relative;
+        animation-name: bounce1;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+      }
+      .ballz {
+        width: 50px;
+        height: 50px;
+        margin-top: 50px;
+        border-radius: 50%;
+        background: #00cccc;
+        position: relative;
+        animation-name: bounce1;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+      }
+      .bahl {
+        width: 50px;
+        height: 50px;
+        margin-top: 50px;
+        border-radius: 50%;
+        background: #00cccc;
+        position: relative;
+        animation-name: bounce1;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+      }
+      @keyframes bounce1 {
+        0% { top: 0px;}
+        50% { top: 150px;
+        opacity: 0.1;}
+        100% { top: 0px;}
+      }
+
+      #image1 {
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        height: auto;
+        max-width: 100%;
+        /* transform: skewY(-3deg); */
+      }
+      #image2 {
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        margin-bottom: 75px;
+      }
+
+      .textstyle {
+        text-align: center;
+        font-family: 'Montserrat', monospace;
+        font-size: 17px;
+        font-weight: 100;
+        line-height: 35px;
+      }
+      .buttons {
+        color: hsl(180, 90%, 35%);
+        font-family: 'Montserrat', monospace;
+        font-size: 17px;
+        font-weight: 100;
+        line-height: 35px;
+        vertical-align: top;
+        display: inline-block;
+        margin: auto;
+      }
+      .fieldset {
+        border-color: hsl(180, 90%, 35%);
+        border-style: solid;
+      }
+
+      .big-btn {
+        width: 90px;
+        height: 40px;
+    }
+      a {
+        color: hsl(180, 90%, 35%);
+      }
+      a:hover {
+        /* this can revert back to changing color: hsl(180, 90%, 35%) on
+        the hover instead of the animation */
+        transform: scale(2);
+        animation-name: background-color;
+        animation-duration: 500ms;
+        animation-fill-mode: forwards;
+        /* the animation fill mode as "forwards" keeps the end of
+        the animation instead of it going back to the original state when
+        you're still hovering over it */
+      }
+      @keyframes background-color {
+        100% { color: pink; }
+      }
+      /*
+      figure:hover {
+        transform: scale(1.1);
+      } makes the image slight larger on hover. only here so i can remember how
+       to do it. */
+
+
+    </style>
+  </head>
+  <body>
+    <!-- here's how to comment HTML -->
+      <h1 id="top">Lockett Pundt</h1>
+      <!-- <h2>This is me learning HTML and CSS</h2> -->
+      <figure style="text-align: center;">
+        <img id="image1" src="thumbnail_tumblr_pjn4lcDc211wfqsjlo1_1280.jpg">
+        <figcaption>Hi There!</figcaption>
+      </figure>
+      </br></br>
+        <p id="bottom">I'll be applying what i am learning from <a href="https://www.freecodecamp.org/" target="_blank">freecodecamp.org</a>
+        to this page in hopes to <strong>practice</strong> and <u>retain</u> what i have learned. It also serves as a sort of growth chart so i can come here
+        and refine and tweak this page as i progress in the course.
+      </p>
+      <section class="textstyle">
+        So... This is just some filler text until i have a design in mind. I'll
+        likely add some extremely interesting and invaluable insight into your
+        life, right here in this very paragraph. You'll need to look no further.....
+        <br></br>
+        Until then, this will have to do.
+        <br></br>
+      </section>
+      <figure>
+        <img id="image2" src="thumbnail_tumblr_p7nkcrbCDN1ruhplso1_1280.jpg">
+      </figure>
+      <hr>
+      <div id="bouncing">
+        <div id="ball3" class="bahl"></div>
+        <div id="ball1" class="balls"></div>
+        <div id="ball2" class="ballz"></div>
+      </div>
+      <br><br><br><br><br><br><br><br>
+     <!-- <form style="text-align:center;">
+        <p>Let me know what you think!
+           Leave some feedback here...</p>
+        <label class="textstyle" style="font-size:14px" for="feedback">Feedback</label>
+        <input type="text" id="feedback" name="feedback">
+
+          <fieldset class="fieldset">
+            <legend class="textstyle" style="color: hsl(180, 90%, 35%)">
+              How are you feeling today?</legend>
+              <input id="happy" type="radio" value="happy" name="feeling">
+                <label for="happy" class="buttons" >Happy</label><br>
+              <input id="sad" type="radio" value="sad" name="feeling">
+                <label for="sad" class="buttons">Sad</label><br>
+              <input id="disgusted" type="radio" value="disgusted" name="feeling">
+                <label for="disgusted" class="buttons">Disgusted</label><br>
+              <input id="cares" type="radio" value="who cares" name="feeling">
+                <label for="cares" class="buttons" >Who cares??</label>
+
+
+        <!-- you have to give the radio inputs the same "name" for a single
+        option to be selected. otherwise they can all be selected. 
+
+          </fieldset><br>
+          <input class="textstyle big-btn" type="submit" name="submit" value="Submit">
+      </form> -->
+    <footer>
+    </footer>
+  </body>
+  </html>
