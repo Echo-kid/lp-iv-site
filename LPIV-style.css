@@ -1,0 +1,182 @@
+
+    body {
+      background: linear-gradient( 35deg, #CCFFFF, #FFCCCC);
+    }
+    @font-face {
+    font-family: 'ProximaNova';
+     src: url('/fonts/proximanova_regular/ProximaNova-Reg-webfont.eot');
+     src: url('/fonts/proximanova_regular/ProximaNova-Reg-webfont.eot?iefix') format('eot'),
+          url('/fonts/proximanova_regular/ProximaNova-Reg-webfont.woff') format('woff'),
+          url('/fonts/proximanova_regular/ProximaNova-Reg-webfont.ttf') format('truetype'),
+     font-weight: normal;
+     font-style: normal;
+    } 
+    /* trying to figure this part out. I'd like ot use proxima nova instead of verdana. */
+    h1 {
+      font-family: 'Montserrat' , verdana;
+      color: hsl(180, 90%, 35%);
+      margin: 90px 20px 90px 20px;
+      padding: 20px 20px 20px 20px;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 45px;
+      font-weight: 400;
+    }
+    h2 {
+      color: gray;
+      font-family: 'Montserrat', verdana;
+      text-align: center;
+      margin: 10px 20px 20px 20px;
+      padding:20px 20px 20px 20px;
+      opacity: 0.7;
+      font-weight: 100;
+    }
+    p {
+      text-align: center;
+      font-family: 'Montserrat', monospace;
+      font-size: 17px;
+      font-weight: ;
+      line-height: 35px;
+    }
+    figcaption {
+      text-align: center;
+      font-family: 'Montserrat', monospace;
+      font-size: 17px;
+      font-weight: 10;
+      line-height: 35px;
+      color: gray;
+    }
+    nav {
+      text-align: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 20px;
+      margin: ;
+      padding: 7px 0px 7px 0px;
+      float: ;
+      color: hsl(180, 90%, 35%);
+      font-size: 17px;
+      background: linear-gradient( 35deg, #CCFFFF, #FFCCCC);
+      font-family:'Montserrat', monospace;
+
+    }
+    hr { display: block; 
+      height: 1px;
+      border: 0;
+      border-top: 1px solid hsl(180, 90%, 35%);
+      margin: 1em 0;
+      padding: 0;
+    }
+      #bouncing {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 100px;
+      }
+      .balls {
+        width: 50px;
+        height: 50px;
+        margin-top: 50px;
+        border-radius: 50%;
+        background: #00cccc;
+        position: relative;
+        animation-name: bounce1;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+      }
+      .ballz {
+        width: 50px;
+        height: 50px;
+        margin-top: 50px;
+        border-radius: 50%;
+        background: #00cccc;
+        position: relative;
+        animation-name: bounce1;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+      }
+      .bahl {
+        width: 50px;
+        height: 50px;
+        margin-top: 50px;
+        border-radius: 50%;
+        background: #00cccc;
+        position: relative;
+        animation-name: bounce1;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+      }
+      @keyframes bounce1 {
+        0% { top: 0px;}
+        50% { top: 150px;
+        opacity: 0.1;}
+        100% { top: 0px;}
+      }
+
+      #image1 {
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        height: auto;
+        max-width: 100%;
+        /* transform: skewY(-3deg); */
+      }
+      #image2 {
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        margin-bottom: 75px;
+      }
+
+      .textstyle {
+        text-align: center;
+        font-family: 'Montserrat', monospace;
+        font-size: 17px;
+        font-weight: 100;
+        line-height: 35px;
+      }
+      .buttons {
+        color: hsl(180, 90%, 35%);
+        font-family: 'Montserrat', monospace;
+        font-size: 17px;
+        font-weight: 100;
+        line-height: 35px;
+        vertical-align: top;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .fieldset {
+        border-color: hsl(180, 90%, 35%);
+        border-style: solid;
+      }
+
+      .big-btn {
+        width: 90px;
+        height: 40px;
+    }
+      a {
+        color: hsl(180, 90%, 35%);
+      }
+      a:hover {
+        /* this can revert back to changing color: hsl(180, 90%, 35%) on
+        the hover instead of the animation */
+        transform: scale(2);
+        animation-name: background-color;
+        animation-duration: 500ms;
+        animation-fill-mode: forwards;
+        /* the animation fill mode as "forwards" keeps the end of
+        the animation instead of it going back to the original state when
+        you're still hovering over it */
+      }
+      @keyframes background-color {
+        100% { color: pink; }
+      }
+      /*
+      figure:hover {
+        transform: scale(1.1);
+      } makes the image slight larger on hover. only here so i can remember how
+       to do it. */
+
