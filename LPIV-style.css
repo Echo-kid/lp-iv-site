@@ -2,15 +2,6 @@
     body {
       background: linear-gradient( 35deg, #CCFFFF, #FFCCCC);
     }
-    @font-face {
-    font-family: 'ProximaNova';
-     src: url('/fonts/proximanova_regular/ProximaNova-Reg-webfont.eot');
-     src: url('/fonts/proximanova_regular/ProximaNova-Reg-webfont.eot?iefix') format('eot'),
-          url('/fonts/proximanova_regular/ProximaNova-Reg-webfont.woff') format('woff'),
-          url('/fonts/proximanova_regular/ProximaNova-Reg-webfont.ttf') format('truetype'),
-     font-weight: normal;
-     font-style: normal;
-    } 
     /* trying to figure this part out. I'd like ot use proxima nova instead of verdana. */
     h1 {
       font-family: 'Montserrat' , verdana;
@@ -35,7 +26,6 @@
       text-align: center;
       font-family: 'Montserrat', monospace;
       font-size: 17px;
-      font-weight: ;
       line-height: 35px;
     }
     figcaption {
@@ -54,9 +44,7 @@
       right: 0;
       width: 100%;
       height: 20px;
-      margin: ;
       padding: 7px 0px 7px 0px;
-      float: ;
       color: hsl(180, 90%, 35%);
       font-size: 17px;
       background: linear-gradient( 35deg, #CCFFFF, #FFCCCC);
