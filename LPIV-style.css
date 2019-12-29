@@ -108,7 +108,7 @@
       #image1 {
         box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
         height: auto;
-        max-width: 60%;
+        max-width: 70%;
         /* transform: skewY(-3deg); */
       }
       #image2 {
@@ -116,7 +116,7 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 60%;
+        width: 70%;
         margin-bottom: 75px;
       }
 
