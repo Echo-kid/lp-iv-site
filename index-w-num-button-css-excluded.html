@@ -23,8 +23,7 @@
       </br></br>
       <p id="bottom">I'll be applying what i am learning from <a href="https://www.freecodecamp.org/" target="_blank">freecodecamp.org</a>
       to this page in hopes to <strong>practice</strong> and <u>retain</u> what i have learned. It also serves as a sort of growth chart so i can come here
-      and refine and tweak this page as i progress in the course.<br>
-      So... This is just some filler text until i have a design in mind. I'll
+      and refine and tweak this page as i progress in the course.So... This is just some filler text until i have a design in mind. I'll
       likely add some extremely interesting and invaluable insight into your
       life, right here in this very paragraph. You'll need to look no further.....
       <br></br>
@@ -75,12 +74,11 @@
       function guessNumber(num) {
         /* added the promt inside the fucntion. it was running when the page loaded...
         */
-        var guess = parseInt(prompt("Guess a number between 1 and 10. You have 10 guesses..."));
+        var x = parseInt(prompt("Guess a number between 1 and 10. You have 10 guesses..."));
         var rando = Math.random();
         var rando2 = (rando * 10) + 1;
         var numField = Math.floor(rando2);
-          var x = num;
-          for (var i = 9; i > 0; i--) {
+          for (var i = 10; i > 0; i--) {
             if (x >= 1 && x <= 10) {
                 if (x === numField) {
                       return alert("Congrats! You chose correctly!");
